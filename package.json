@@ -1,0 +1,38 @@
+{
+  "name": "BaseWeb",
+  "version": "1.0.0",
+  "description": "Base web project.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-webdriver": "webdriver-manager update",
+    "start-webdriver": "webdriver-manager start",
+    "karma": "karma start karma.conf.js",
+    "protractor": "protractor protractor.conf.js",
+    "server": "http-server -a 0.0.0.0 -p 8010"
+  },
+  "author": "",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "bower-installer": "^1.2.0",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-tsc": "^1.0.0",
+    "gulp-tslint": "^3.1.2",
+    "gulp-util": "^3.0.6",
+    "http-server": "^0.8.0",
+    "jasmine": "^2.3.1",
+    "jasmine-core": "^2.3.4",
+    "jasmine-reporters": "^2.0.7",
+    "karma": "^0.13.3",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-cli": "^0.1.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.6",
+    "karma-junit-reporter": "^0.3.3",
+    "protractor": "^2.1.0",
+    "run-sequence": "^1.1.2",
+    "tsd": "^0.6.3",
+    "tslint": "^2.4.2",
+    "typescript": "^1.5.3"
+  }
+}
