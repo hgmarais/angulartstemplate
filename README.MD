@@ -21,10 +21,6 @@ webdriver-manager update --standalone
 npm install
 bower-installer
 ```
-#### 7. Install web driver
-```
-npm run update-webdriver
-```
 ## Folder Structure
 
 Folder/File|Description|Generated|Source Control
@@ -54,30 +50,28 @@ Run lint on all TypeScript files in the `ts/app` folder:
 ```
 gulp lint
 ```
+
 ### Compile TypeScript
-Compile everything in the `ts` folder:
-```
-gulp tsc
-```
-The output is placed in `js`<br>
-Compile only `ts/app`:
-```
-gulp tsc:app
-```
-Compile only `ts/unit`:
-```
-gulp tsc:unit
-```
-Compile only `ts/e2e`:
-```
-gulp tsc:e2e
-```
-### Run Unit Tests
+Command|Description|Output
+---|---|---
+gulp tsc|Compile everything in the `ts` folder.|js
+gulp tsc:app|Compile only `ts/app`. All files are compiled into a single `app.js` file which is then copied to `www/js`.|js/app
+gulp tsc:e2e|Compile only `ts/e2e`.|js/e2e
+gulp tsc:unit|Compile only `ts/unit`.|js/unit
+
+### Cleanup
+Command|Description
+---|---
+gulp clean|Deletes all compiled JavaScipt files and test reports.
+gulp clean:tsc|Deletes all compiled JavaScript files.
+gulp clean:reports|Deletes all test reports.
+
+### Unit Tests
 ```
 npm run karma
 ```
 The output is placed in `reports/unit`
-### Run E2E Tests
+### E2E Tests
 First start the web driver and the HTTP server. This only needs to be done once.
 ```
 npm run start-webdriver
