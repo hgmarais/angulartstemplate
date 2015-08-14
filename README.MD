@@ -1,27 +1,27 @@
 # Angular TypeScript Project Template
 ## Getting Started
-1. Install [NodeJS](https://nodejs.org/)
-2. Install [Bower](http://bower.io/)
+#### 1. Install [NodeJS](https://nodejs.org/)
+#### 2. Install [Bower](http://bower.io/)
 ```
 npm install bower -g
 npm install bower-installer -g
 ```
-3. Install [Gulp](http://gulpjs.com/)
+#### 3. Install [Gulp](http://gulpjs.com/)
 ```
 npm install gulp -g
 ```
-4. Install Web Driver Manager
+#### 4. Install Web Driver Manager
 ```
 npm install webdriver-manager -g
 webdriver-manager update --standalone
 ```
-5. Clone this repo and do the rest from the project root folder.
-6. Install Node and Bower dependencies
+#### 5. Clone this repo and do the rest from the project root folder.
+#### 6. Install Node and Bower dependencies
 ```
 npm install
 bower-installer
 ```
-7. Install web driver
+#### 7. Install web driver
 ```
 npm run update-webdriver
 ```
@@ -50,7 +50,7 @@ tslint.json|TypeScript lint configuration.|no|yes
 
 ## Usage
 ### Run Lint
-Run lint on all TypeScript files in the `ts` folder:
+Run lint on all TypeScript files in the `ts/app` folder:
 ```
 gulp lint
 ```
