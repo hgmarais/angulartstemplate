@@ -25,9 +25,9 @@ bower-installer
 ```
 npm run update-webdriver
 ```
-## Directory Structure
+## Folder Structure
 
-|Description|Generated|Source Control
+Folder/File|Description|Generated|Source Control
 ---|---|---|---
 bower_components|Third party JS libraries.|yes|no
 js|JavaScript compiled from TypeScript.|yes|no
