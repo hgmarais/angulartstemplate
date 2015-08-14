@@ -28,7 +28,7 @@ npm run update-webdriver
 ## Folder Structure
 
 Folder/File|Description|Generated|Source Control
----|---|---|---
+---|---|:---:|:---:
 bower_components|Third party JS libraries.|yes|no
 js|JavaScript compiled from TypeScript.|yes|no
 node_modules|NodeJS dependencies.|yes|no
@@ -81,10 +81,15 @@ The output is placed in `reports/unit`
 First start the web driver and the HTTP server. This only needs to be done once.
 ```
 npm run start-webdriver
-npm run server
+npm run e2e-server
 ```
 Now the tests can be executed with:
 ```
 npm run protractor
 ```
 The output is placed in `reports/e2e`
+### Manual Tests
+```
+npm run server
+```
+Go to http://localhost:8020
