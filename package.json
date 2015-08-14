@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Base web project.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "update-webdriver": "webdriver-manager update",
     "start-webdriver": "webdriver-manager start",
     "karma": "karma start karma.conf.js",
